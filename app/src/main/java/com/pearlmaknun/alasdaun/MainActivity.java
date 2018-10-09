@@ -18,12 +18,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Peta(View view) {
-        Uri gmmIntentUri = Uri.parse("geo:-6.900227, 107.625467");
+        /*Uri gmmIntentUri = Uri.parse("geo:-6.900227, 107.625467(RM+Alas+Daun)");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         mapIntent.setPackage("com.google.android.apps.maps");
         if (mapIntent.resolveActivity(getPackageManager()) != null) {
             startActivity(mapIntent);
-        }
+        }*/
+        Uri gmmIntentUri = Uri.parse("geo:0,0?q=RM Alas Daun - Bandung, Sundanese+restaurant, Bandung");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+        mapIntent.setPackage("com.google.android.apps.maps");
+        startActivity(mapIntent);
+
     }
 
     public void Telefon(View view) {
