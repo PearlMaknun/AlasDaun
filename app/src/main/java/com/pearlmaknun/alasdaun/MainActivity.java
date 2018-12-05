@@ -9,12 +9,19 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.pearlmaknun.alasdaun.database.MenuHelper;
+
 public class MainActivity extends AppCompatActivity {
+
+    MenuHelper menuHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        menuHelper = new MenuHelper(this);
+        //menuHelper.open();
     }
 
     public void Peta(View view) {
